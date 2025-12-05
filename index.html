@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>HAZ Lab @ Drexel University</title>
+        <meta charset="utf-8">
+        <meta name="title" content="HAZ Lab @ Drexel University" />
+        <meta name="description" content="The HAZ Lab conducts research on Natural Language Processing and Artificial Intelligence, focusing on planning and reasoning using Large Language Models." />
+        <meta name="theme-color" content="#fec500" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/purecss@3.0.0/build/pure-min.css" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/purecss@3.0.0/build/grids-responsive-min.css"/>
+        
+        <!-- putting these lower so they can override -->
+        <link rel="stylesheet" href="/style/global.css">
+        <link rel="stylesheet" href="/style/index.css">
+    
+    </head>
+    <body>
+       
+    <navbar>
+        <span class="hide-mobile">HAZ LAB</span>
+        <nav class="nav-links">
+            <a href="/">home</a>
+            <a href="/news">news</a>
+            <a href="/research">research</a>
+            <a href="/team">team</a>
+        </nav>
+    </navbar>
+
+    <section id="home" class="pure-g">
+        <div class="pure-u-1-24"> <!-- Formatting div--> </div>
+        <div class="pure-u-md-1-3">
+            <h1>HAZ</h1>
+            <p id="splashtext">
+                Large Language Models (LLMs) struggle with verifiability and hallucination in planning, preventing real-world deployment. Our mission is the LLM-as-Formalizer paradigm: shifting the LLM's role from an unreliable planner to a precise translator. The LLM converts user goals into rigorous formal languages (like PDDL), which are then solved by symbolic solvers, guaranteeing verifiability and deterministic execution.
+                <br><br>
+                <strong>I. Tool-Driven Problem Solving</strong>
+                <br><br>
+                This primary line enhances framework robustness by mapping complex reasoning tasks—including MDP/POMDP Planning, Deductive Reasoning, and Constraint Satisfaction—to the correct external solvers. We employ formal tools like PDDL, SMT, and Lean as verifiable intermediate representations. This research extends to Iterative Formalization for dynamic, partially observable environments and Multimodal Formalization from sensor data.
+                <br><br>
+                <strong>II. Optimization and Model Interpretability</strong>
+                <br><br>
+                This secondary line focuses on optimizing the efficiency and fidelity of these neuro-symbolic tools. We refine the LLM's translation process via advanced Generative Chain-of-Thought (CoT) methods and novel intermediate formal languages. Crucially, we apply Mechanistic Interpretability (Mech-Int) techniques to dissect how the model translates language, ensuring long-term reliability.
+            </p>
+        </div>
+        <div class="pure-u-1-4"> <!-- Formatting div--> </div>
+        <div id="logo" class="pure-u-1-3">
+            <img src="assets/hazlab_logo.png" alt="HAZ Lab Logo">
+        </div>
+        <div class="pure-u-1-24"> <!-- Formatting div--> </div>
+    </section>
+
+
+    <!-- 
+        <div class="unit dreary block-20" id="visual">
+            <img src="/assets/dummy.png" alt="Description" draggable="false">
+            <p>Image Caption Goes here</p>
+        </div> 
+    -->
+
+    <footer style="height: 0px;"></footer>
+    </body>
+</html>
+

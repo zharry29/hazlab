@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@800&family=Ruwudu:wght@400;500;600;700&display=swap');
+
+:root {
+    --selection: lightblue;
+	--accent: #31508e;
+    --secondary: #e3d94b;
+    --background: #e8e8e8;
+}
+
+body {
+  font-family: 'Ruwudu', sans-serif;
+  background-color: var(--background);
+  font-size: 20px;
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+a { color: var(--accent); text-decoration: none; }
+a:hover {  text-decoration: underline 1.5px; }
+::selection { background-color: var(--selection); }
+img { user-select: none; pointer-events: none; }
+
+
+h1 {
+    font-family: 'Raleway', sans-serif;
+    font-size: 9.5rem;
+    font-weight: 800;
+    line-height: 0.8;
+
+    margin: 4rem 0;
+    padding: 0;
+    user-select: none; /* for the A's notch's sake */
+}
+
+
+
+navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* TRBL */
+
+    padding: 3rem 6rem 2rem 4rem;
+    font-size: 1.15rem;
+}
+
+
+navbar > nav {
+    display: flex;
+    gap: 1.5rem;
+}
+
+navbar > nav > a {
+    text-decoration: none;
+    color: inherit;
+}
+
+@media (max-width: 600px) {
+    navbar {
+        padding: 4vh 1vw 0vh 1vw;
+        font-size: small;
+        justify-content: center;
+    }
+    navbar > nav { gap: 3rem; }
+}
+
+/* mobile */
+@media (max-width: 600px) { 
+    .hide-mobile { display: none !important;} 
+}
+@media screen and (min-width: 600px) { .hide-desktop { display: none !important; } }
+

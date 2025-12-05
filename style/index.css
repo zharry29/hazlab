@@ -1,0 +1,43 @@
+#home>div>h1 {
+    margin-bottom: 2rem;
+}
+
+#home>div>h1::after {
+    content: "|";
+    user-select: none;
+    pointer-events: none;
+    position: absolute;
+    transform: translate(-4.755rem, 3.8rem) rotate(17.05deg); 
+    color: var(--background); /* matches background to create notch effect */
+    font-size: calc(9.5rem * 0.53125); /*53.125% of the original font size */
+}
+
+
+#splashtext {
+    padding: 0rem 0.5rem;
+}
+
+
+#logo {
+    position: relative;
+    overflow: visible;
+    transform: translate(-1rem, -1rem);
+}
+
+#logo img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: min(550px, 120%);
+    max-width: 100%;
+    height: auto;
+}
+
+
+
+@media (max-width: 600px) {
+    #splashtext {
+        padding: 0 1rem 0 1rem;
+    }
+}
+
